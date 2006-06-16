@@ -1,0 +1,6 @@
+category: Libs
+requires: cygwin
+sdesc: "Bidirectional Unicode (runtime library)"
+ldesc: "A library that implements the Unicode Bidirectional Algorithm 
+(also knows as BiDi).  This package contains the runtime library."
+external-source: fribidi
