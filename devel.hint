@@ -1,5 +1,5 @@
 category: Libs
-requires: cygwin
+requires: cygwin libfribidi0
 external-source: fribidi
 sdesc: "Bidirectional Unicode (development)"
 ldesc: "A library that implements the Unicode Bidirectional Algorithm 

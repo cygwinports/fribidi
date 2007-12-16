@@ -5,19 +5,19 @@ Algorithm (also known as BiDi).  This package contains
 the runtime and documentation.
 
 Runtime requirements:
-  cygwin-1.5.21-1
+  cygwin-1.5.24-2
 
 Build requirements:
-  cygwin-1.5.21-1
-  autoconf2.5-2.59-2
-  automake1.9-1.9.6-1
-  binutils-20060709-1
-  cygport-0.2.5-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  libtool1.5-1.5.22-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.3.7-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
   make-3.81-1
-  sed-4.1.5-1
+  sed-4.1.5-2
 
 Canonical homepage:
   http://fribidi.org/wiki/
@@ -28,17 +28,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack fribidi-0.10.7-X-src.tar.bz2
+  unpack fribidi-0.10.9-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./fribidi-0.10.7-X.cygport all
+  cygport ./fribidi-0.10.9-X.cygport all
 
 This will create:
-  /usr/src/fribidi-0.10.7-X-src.tar.bz2
-  /usr/src/fribidi-0.10.7-X.tar.bz2
-  /usr/src/libfribidi-devel-0.10.7-X.tar.bz2
-  /usr/src/libfribidi0-0.10.7-X.tar.bz2
+  /usr/src/fribidi-0.10.9-X-src.tar.bz2
+  /usr/src/fribidi-0.10.9-X.tar.bz2
+  /usr/src/libfribidi-devel-0.10.9-X.tar.bz2
+  /usr/src/libfribidi0-0.10.9-X.tar.bz2
 
 -------------------------------------------
 
@@ -46,15 +46,15 @@ Files included in the binary packages:
 
 (fribidi)
   /usr/bin/fribidi.exe
-  /usr/share/doc/Cygwin/fribidi-0.10.7.README
-  /usr/share/doc/fribidi-0.10.7/AUTHORS
-  /usr/share/doc/fribidi-0.10.7/COPYING
-  /usr/share/doc/fribidi-0.10.7/ChangeLog
-  /usr/share/doc/fribidi-0.10.7/INSTALL
-  /usr/share/doc/fribidi-0.10.7/NEWS
-  /usr/share/doc/fribidi-0.10.7/README
-  /usr/share/doc/fribidi-0.10.7/THANKS
-  /usr/share/doc/fribidi-0.10.7/TODO
+  /usr/share/doc/Cygwin/fribidi-0.10.9.README
+  /usr/share/doc/fribidi-0.10.9/AUTHORS
+  /usr/share/doc/fribidi-0.10.9/COPYING
+  /usr/share/doc/fribidi-0.10.9/ChangeLog
+  /usr/share/doc/fribidi-0.10.9/INSTALL
+  /usr/share/doc/fribidi-0.10.9/NEWS
+  /usr/share/doc/fribidi-0.10.9/README
+  /usr/share/doc/fribidi-0.10.9/THANKS
+  /usr/share/doc/fribidi-0.10.9/TODO
 
 (libfribidi0)
   /usr/bin/cygfribidi-0.dll
@@ -85,6 +85,9 @@ Files included in the binary packages:
 
 Port Notes:
 
+----- version 0.10.9-1 -----
+Version bump.
+
 ----- version 0.10.7-2 -----
 Restored libfribidi-devel.
 
@@ -104,4 +107,4 @@ Initial Cygwin release.
 
 
 Cygwin port maintained by:
-http://cygwin-ports.sourceforge.net/
+http://cygwinports.dotsrc.org/
