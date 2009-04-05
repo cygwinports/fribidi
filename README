@@ -5,18 +5,18 @@ Algorithm (also known as BiDi).  This package contains
 the runtime and documentation.
 
 Runtime requirements:
-  cygwin-1.5.24-2
+  cygwin-1.7.0-45
+  libgcc1-4.3.2-2
 
 Build requirements:
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
-  gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
-  make-3.81-1
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-12
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical homepage:
@@ -28,17 +28,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack fribidi-0.10.9-X-src.tar.bz2
+  unpack fribidi-0.19.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./fribidi-0.10.9-X.cygport all
+  cygport ./fribidi-0.19.2-X.cygport all
 
 This will create:
-  /usr/src/fribidi-0.10.9-X-src.tar.bz2
-  /usr/src/fribidi-0.10.9-X.tar.bz2
-  /usr/src/libfribidi-devel-0.10.9-X.tar.bz2
-  /usr/src/libfribidi0-0.10.9-X.tar.bz2
+  /usr/src/fribidi-0.19.2-X-src.tar.bz2
+  /usr/src/fribidi-0.19.2-X.tar.bz2
+  /usr/src/libfribidi-devel-0.19.2-X.tar.bz2
+  /usr/src/libfribidi0-0.19.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -46,64 +46,79 @@ Files included in the binary packages:
 
 (fribidi)
   /usr/bin/fribidi.exe
-  /usr/share/doc/Cygwin/fribidi-0.10.9.README
-  /usr/share/doc/fribidi-0.10.9/AUTHORS
-  /usr/share/doc/fribidi-0.10.9/COPYING
-  /usr/share/doc/fribidi-0.10.9/ChangeLog
-  /usr/share/doc/fribidi-0.10.9/INSTALL
-  /usr/share/doc/fribidi-0.10.9/NEWS
-  /usr/share/doc/fribidi-0.10.9/README
-  /usr/share/doc/fribidi-0.10.9/THANKS
-  /usr/share/doc/fribidi-0.10.9/TODO
+  /usr/share/doc/fribidi/AUTHORS
+  /usr/share/doc/fribidi/COPYING
+  /usr/share/doc/fribidi/ChangeLog
+  /usr/share/doc/fribidi/NEWS
+  /usr/share/doc/fribidi/README
+  /usr/share/doc/fribidi/THANKS
+  /usr/share/doc/fribidi/TODO
 
 (libfribidi0)
   /usr/bin/cygfribidi-0.dll
 
 (libfribidi-devel)
-  /usr/bin/fribidi-config
+  /usr/include/fribidi/fribidi-arabic.h
+  /usr/include/fribidi/fribidi-begindecls.h
+  /usr/include/fribidi/fribidi-bidi-types-list.h
+  /usr/include/fribidi/fribidi-bidi-types.h
+  /usr/include/fribidi/fribidi-bidi.h
+  /usr/include/fribidi/fribidi-char-sets-list.h
+  /usr/include/fribidi/fribidi-char-sets.h
+  /usr/include/fribidi/fribidi-common.h
+  /usr/include/fribidi/fribidi-config.h
+  /usr/include/fribidi/fribidi-deprecated.h
+  /usr/include/fribidi/fribidi-enddecls.h
+  /usr/include/fribidi/fribidi-flags.h
+  /usr/include/fribidi/fribidi-joining-types-list.h
+  /usr/include/fribidi/fribidi-joining-types.h
+  /usr/include/fribidi/fribidi-joining.h
+  /usr/include/fribidi/fribidi-mirroring.h
+  /usr/include/fribidi/fribidi-shape.h
+  /usr/include/fribidi/fribidi-types.h
+  /usr/include/fribidi/fribidi-unicode-version.h
+  /usr/include/fribidi/fribidi-unicode.h
   /usr/include/fribidi/fribidi.h
-  /usr/include/fribidi/fribidi_char_sets.h
-  /usr/include/fribidi/fribidi_char_sets.i
-  /usr/include/fribidi/fribidi_char_sets_cap_rtl.h
-  /usr/include/fribidi/fribidi_char_sets_cp1255.h
-  /usr/include/fribidi/fribidi_char_sets_cp1256.h
-  /usr/include/fribidi/fribidi_char_sets_isiri_3342.h
-  /usr/include/fribidi/fribidi_char_sets_iso8859_6.h
-  /usr/include/fribidi/fribidi_char_sets_iso8859_8.h
-  /usr/include/fribidi/fribidi_char_sets_utf8.h
-  /usr/include/fribidi/fribidi_config.h
-  /usr/include/fribidi/fribidi_mem.h
-  /usr/include/fribidi/fribidi_types.h
-  /usr/include/fribidi/fribidi_types.i
-  /usr/include/fribidi/fribidi_unicode.h
   /usr/lib/libfribidi.a
   /usr/lib/libfribidi.dll.a
   /usr/lib/libfribidi.la
   /usr/lib/pkgconfig/fribidi.pc
+  /usr/share/man/man3/fribidi_charset_to_unicode.3.gz
+  /usr/share/man/man3/fribidi_debug_status.3.gz
+  /usr/share/man/man3/fribidi_get_bidi_type.3.gz
+  /usr/share/man/man3/fribidi_get_bidi_type_name.3.gz
+  /usr/share/man/man3/fribidi_get_bidi_types.3.gz
+  /usr/share/man/man3/fribidi_get_joining_type.3.gz
+  /usr/share/man/man3/fribidi_get_joining_type_name.3.gz
+  /usr/share/man/man3/fribidi_get_joining_types.3.gz
+  /usr/share/man/man3/fribidi_get_mirror_char.3.gz
+  /usr/share/man/man3/fribidi_get_par_direction.3.gz
+  /usr/share/man/man3/fribidi_get_par_embedding_levels.3.gz
+  /usr/share/man/man3/fribidi_get_type.3.gz
+  /usr/share/man/man3/fribidi_get_type_internal.3.gz
+  /usr/share/man/man3/fribidi_join_arabic.3.gz
+  /usr/share/man/man3/fribidi_log2vis.3.gz
+  /usr/share/man/man3/fribidi_log2vis_get_embedding_levels.3.gz
+  /usr/share/man/man3/fribidi_mirroring_status.3.gz
+  /usr/share/man/man3/fribidi_parse_charset.3.gz
+  /usr/share/man/man3/fribidi_remove_bidi_marks.3.gz
+  /usr/share/man/man3/fribidi_reorder_line.3.gz
+  /usr/share/man/man3/fribidi_reorder_nsm_status.3.gz
+  /usr/share/man/man3/fribidi_set_debug.3.gz
+  /usr/share/man/man3/fribidi_set_mirroring.3.gz
+  /usr/share/man/man3/fribidi_set_reorder_nsm.3.gz
+  /usr/share/man/man3/fribidi_shape.3.gz
+  /usr/share/man/man3/fribidi_shape_mirroring.3.gz
+  /usr/share/man/man3/fribidi_unicode_to_charset.3.gz
+  /usr/share/man/man3/fribidi_unicode_version.3.gz
+  /usr/share/man/man3/fribidi_version_info.3.gz
 
 ------------------
 
 Port Notes:
 
------ version 0.10.9-1 -----
-Version bump.
-
------ version 0.10.7-2 -----
-Restored libfribidi-devel.
-
------ version 0.10.7-1 -----
-Version bump.
-Merged the -devel files into the main package.
-
------ version 0.10.5-1 -----
-Upstream version bump.
-
------ version 0.10.4-2 -----
-The shared library is now built, so there are now three packages: 
-fribidi, libfribidi0, and libfribidi-devel.
-
------ version 0.10.4-1 -----
-Initial Cygwin release.
+----- version 0.19.2-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
