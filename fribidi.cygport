@@ -1,0 +1,16 @@
+NAME="fribidi"
+VERSION=0.19.2
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Bidirectional Unicode library"
+DESCRIPTION="A library that implements the Unicode Bidirectional Algorithm
+(also knows as BiDi)."
+HOMEPAGE="http://fribidi.org/wiki/"
+SRC_URI="http://fribidi.org/download/${P}.tar.gz"
+
+PKG_NAMES="${NAME} lib${NAME}0 lib${NAME}-devel"
+fribidi_CATEGORY="Text"
+fribidi_SUMMARY="${SUMMARY% *} utility"
+fribidi_CONTENTS='usr/bin/*.exe usr/share/doc/'
+libfribidi0_CONTENTS='usr/bin/cygfribidi-0.dll'
+libfribidi_devel_CONTENTS='usr/include/ usr/lib/ usr/share/man/man3/'

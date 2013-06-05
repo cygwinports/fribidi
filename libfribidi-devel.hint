@@ -1,6 +1,0 @@
-category: Text
-requires: libfribidi0
-external-source: fribidi
-sdesc: "Bidirectional Unicode (development)"
-ldesc: "A library that implements the Unicode Bidirectional Algorithm 
-(also knows as BiDi).  This package contains the runtime library."

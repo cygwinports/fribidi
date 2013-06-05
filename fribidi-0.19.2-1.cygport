@@ -1,8 +1,0 @@
-DESCRIPTION="Bidirectional Unicode library"
-HOMEPAGE="http://fribidi.org/wiki/"
-SRC_URI="http://fribidi.org/download/${P}.tar.gz"
-
-PKG_NAMES="${PN} lib${PN}0 lib${PN}-devel"
-fribidi_CONTENTS='usr/bin/*.exe usr/share/doc/'
-libfribidi0_CONTENTS='usr/bin/cygfribidi-0.dll'
-libfribidi_devel_CONTENTS='usr/include/ usr/lib/ usr/share/man/man3/'
